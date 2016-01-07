@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var random = new Random(DateTime.Now.Millisecond);
+    var img1 = random.Next(1, 200);
+    var img2 = random.Next(1, 200);
+    var img3 = random.Next(1, 200);
+}
+
+<div class="jumbotron">
+    <h1>Harmonize</h1>
+    <img src="http://edgecats.net" style="border-radius: 5px; width: 400px;"/>
+    <img src="http://edgecats.net/@img3" style="border-radius: 5px; width: 400px;" />
+</div> 
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Foo</h2>
+        <p>
+            <img src="http://edgecats.net/@img1" style="border-radius: 5px; width: 400px;" />
+        </p>
+         </div>
+    <div class="col-md-6">
+        <h2>Hello World</h2>
+        <p><img src="http://edgecats.net/@img2" style="border-radius: 5px; width: 400px;" /></p>
+    </div>
+
+</div>
